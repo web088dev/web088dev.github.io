@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luck – Teen Web Developer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("web.jpg"); /* your background */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 0 10px gold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            text-shadow: 0 0 10px black;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            padding: 12px;
+            margin: 10px 0;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Luck Web Developer</h1>
+        <p>I build simple, modern and affordable websites.  
+        Fast delivery. Professional design.</p>
+        <a class="btn" href="prices.html">View Prices</a>
+        <a class="btn" href="https://wa.me/27683722278">Contact on WhatsApp</a>
+        <a href="#" class="btn" onclick="openEmail()">Email me</a>
+
+<script>
+function openEmail() {
+    // Try opening using mailto
+    window.location.href = "mailto:web088developer@gmail.com";
+
+    // After 1 second, open Gmail in case mailto fails
+    setTimeout(function() {
+        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com", "_blank");
+    }, 1000);
+}
+</script>
+
+    </div>
+
+</body>
+</html>

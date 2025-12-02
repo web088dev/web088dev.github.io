@@ -1,0 +1,122 @@
+e<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices & Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("web.jpg") no-repeat center center fixed;
+            background-size: cover
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            color: gold;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .price-box {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact-buttons a {
+            display: block;
+            background: orange;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .contact-buttons a:hover {
+            background: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Prices</h1>
+
+        <div class="price-box">
+            <h3>💻 1 Page Website — <strong>R100</strong></h3>
+        </div>
+
+        <div class="price-box">
+            <h3>📄 3 Page Website — <strong>R180</strong></h3>
+        </div>
+
+        <div class="price-box">
+            <h3>🏢 5 Page Website — <strong>R250</strong></h3>
+        </div>
+
+        <div class="price-box">
+            <h3>⚡ Full Business Website — <strong>R300–R400</strong></h3>
+        </div>
+
+        <hr>
+
+        <h2>Payment Methods</h2>
+        <p>• Bank Transfer<br>• PayPal<br>• CashSend / eWallet</p>
+
+        <h2>50% Deposit Policy</h2>
+        <p>
+            To start the project, clients must pay <strong>50% upfront</strong>.<br>
+            The other 50% is paid <strong>after the final website is approved</strong>.<br>
+            This protects both the client and the developer.
+        </p>
+
+        <hr>
+
+        <h2>Portfolio (My Work)</h2>
+        <p>Here are some projects I worked on:</p>
+
+        <div class="portfolio">
+            <img src="work1.jpg" alt="Project 1">
+            <img src="work2.jpg" alt="Project 2">
+        </div>
+        <hr>
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-buttons">
+            <a href="https://wa.me/27683722278">Chat on WhatsApp</a>
+            <a href="mailto:web088developer@gmail.com">Send Email</a>
+        </div>
+    </div>
+
+</body>
+</html>
