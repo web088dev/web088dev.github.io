@@ -23,19 +23,19 @@
 }
 
         .container {
-            background: rgba(0, 0, 0, 0.5); 
-            padding: 30px;
-            border-radius: 15px;
-            width: 80%;
-            max-width: 600px;
-        }
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;   /* makes the box wider on laptop */
+    margin: auto;
+} 
 
         h1 {
             font-size: 40px;
             text-shadow: 0 0 10px gold;
             margin-bottom: 10px;
         }
-
         p {
             font-size: 20px;
             text-shadow: 0 0 10px black;
@@ -54,8 +54,14 @@
             font-size: 18px;
         }
 
-        .btn:hover {
+        .btn:hover  {
             background: orange;
+        }
+            @media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+        max-width: none;
         }
     </style>
 </head>
@@ -85,4 +91,5 @@ function openEmail() {
 
 </body>
 </html>
+
 
