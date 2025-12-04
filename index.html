@@ -62,20 +62,24 @@
 
  <script>
     function openEmail() {
-        // First try opening the default email app
+        // Try mailto (opens default email app)
         window.location.href = "mailto:web088developer@gmail.com?subject=Website%20Inquiry";
 
-        // Then also try opening Gmail app or Gmail website as a backup
+        // Backup #1: If mailto doesn't work, try Gmail app link
         setTimeout(function () {
-            window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com&su=Website%20Inquiry";
-        }, 800);
+            window.location.href = "googlegmail:///co?to=web088developer@gmail.com&subject=Website%20Inquiry";
+        }, 600);
+
+        // Backup #2: If Gmail app also fails, open Gmail web
+        setTimeout(function () {
+            window.open("https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com&su=Website%20Inquiry", "_blank");
+        }, 1200);
     }
 </script>
-
-
 </body>
 
 </html>
+
 
 
 
