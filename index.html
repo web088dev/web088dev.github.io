@@ -60,19 +60,23 @@
         <a class="btn" href="#" onclick="openEmail()">Email me</a>
     </div>
 
-    <script>
-        function openEmail() {
-            window.location.href = "mailto:web088developer@gmail.com";
+ <script>
+    function openEmail() {
+        // First try opening the default email app
+        window.location.href = "mailto:web088developer@gmail.com?subject=Website%20Inquiry";
 
-            setTimeout(function () {
-                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com", "_blank");
-            }, 1000);
-        }
-    </script>
+        // Then also try opening Gmail app or Gmail website as a backup
+        setTimeout(function () {
+            window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com&su=Website%20Inquiry";
+        }, 800);
+    }
+</script>
+
 
 </body>
 
 </html>
+
 
 
 
