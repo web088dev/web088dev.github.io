@@ -49,15 +49,31 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Luck Web Developer</h1>
-    <p>I build simple, modern and affordable websites.</p>
-    <a class="btn" href="#">View Prices</a>
-    <a class="btn" href="#">Contact on WhatsApp</a>
-    <a class="btn" href="#">Email me</a>
-  </div>
+
+    <div class="container">
+        <h1>Luck Web Developer</h1>
+        <p>I build simple, modern and affordable websites.<br>
+        Fast delivery. Professional design.</p>
+
+        <a class="btn" href="prices.html">View Prices</a>
+        <a class="btn" href="https://wa.me/27687322278">Contact on WhatsApp</a>
+        <a class="btn" href="#" onclick="openEmail()">Email me</a>
+    </div>
+
+    <script>
+        function openEmail() {
+            window.location.href = "mailto:web088developer@gmail.com";
+
+            setTimeout(function () {
+                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com", "_blank");
+            }, 1000);
+        }
+    </script>
+
 </body>
+
 </html>
+
 
 
 
