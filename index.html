@@ -1,95 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Luck – Teen Web Developer</title>
-    <style>
-       body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-
-    background-image: url("web.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-        .container {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 1000px;   /* makes the box wider on laptop */
-    margin: auto;
-} 
-
-        h1 {
-            font-size: 40px;
-            text-shadow: 0 0 10px gold;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 20px;
-            text-shadow: 0 0 10px black;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: block;
-            padding: 12px;
-            margin: 10px 0;
-            background: gold;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 10px;
-            font-size: 18px;
-        }
-
-        .btn:hover  {
-            background: orange;
-        }
-            @media (max-width: 600px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url("web.jpg") center/cover no-repeat fixed;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
     .container {
-        width: 95%;
-        padding: 20px;
-        max-width: none;
-        }
-    </style>
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 15px;
+      width: 95%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      /* fluid or relative font size */
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: orange;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Luck Web Developer</h1>
-        <p>I build simple, modern and affordable websites.  
-        Fast delivery. Professional design.</p>
-        <a class="btn" href="prices.html">View Prices</a>
-        <a class="btn" href="https://wa.me/27683722278">Contact on WhatsApp</a>
-        <a href="#" class="btn" onclick="openEmail()">Email me</a>
-
-<script>
-function openEmail() {
-    // Try opening using mailto
-    window.location.href = "mailto:web088developer@gmail.com";
-
-    // After 1 second, open Gmail in case mailto fails
-    setTimeout(function() {
-        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=web088developer@gmail.com", "_blank");
-    }, 1000);
-}
-</script>
-
-    </div>
-
+  <div class="container">
+    <h1>Luck Web Developer</h1>
+    <p>I build simple, modern and affordable websites.</p>
+    <a class="btn" href="#">View Prices</a>
+    <a class="btn" href="#">Contact on WhatsApp</a>
+    <a class="btn" href="#">Email me</a>
+  </div>
 </body>
 </html>
+
+
 
 
